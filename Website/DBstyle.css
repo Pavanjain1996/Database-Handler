@@ -1,0 +1,25 @@
+body
+{
+	background-color:rgb(150,75,75);
+}
+#heading
+{	
+	background-color:rgb(10,200,150);
+	width=100%;
+}
+#logout
+{
+	position:relative;
+	left:95%;
+}
+a
+{
+	text-decoration:none;
+	color:black;
+	font-size:25px;
+}
+a:hover
+{
+	color:blue;
+	text-decoration:underline;
+}

@@ -1,0 +1,15 @@
+<?php
+session_start();
+$username=$_POST['username'];
+$password=$_POST['password'];
+$con=mysqli_connect('localhost',$username,$password);
+if($con){
+	$_SESSION['username']=$username;
+	$_SESSION['password']=$password;
+	header('location:http://localhost/DatabaseHandler/Third.php');
+}
+else{
+	header('location:http://localhost/DatabaseHandler/First.php');
+}
+mysqli_close($con);
+?>
